@@ -24,7 +24,7 @@ similar word but variations in gender, plural form ...
  this is applicable for all indian languages
  
  ## tSNE Visualization of embeddings:
- ![EmbeddingProjector](https://github.com/njedison1984/TamilNLP/blob/main/images/NearestNeigbhorEmbeddingViz.PNG)
+ ![NearestNeigbhorEmbeddingViz](https://github.com/njedison1984/TamilNLP/blob/master/images/NearestNeigbhorEmbeddingViz.PNG)
  
  ## Word Similarity results:
  You can find the word similarity found by using this approach.
