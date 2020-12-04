@@ -1,8 +1,11 @@
 # Attempt on tamil embeddings
 
-Here I used, 
-character based ngram embeddings and not 
-word based embeddings because of the language structure.
+I created this repo to experiment various nlp tasks using tamil
+language as base.
+
+As a first step towards it, I started with text embeddings.
+
+Here I used character based ngram embeddings because of the language structure.
 
 ## Why Char-Based?
 Vanthaan (வந்தான்)
