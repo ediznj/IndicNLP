@@ -2,14 +2,10 @@ from .model_factory import ECbow, ESkipGram
 
 
 class Embed(object):
-    model_dict = {'SG': ESkipGram(), 'CBOW': ECbow()}
 
-    def __init__(self, approach=None):
-        '''Usage:   approach= 'SG'(Default) options['SG','CBOW']'''
-        if approach:
-            self.model = Embed.model_dict.get(approach, None)
-        else:
-            self.model = ESkipGram()
+    def __init__(self, approach='SG'):
+        """Usage:   approach= 'SG'(Default) options['SG','CBOW']"""
+        self.ft_embed = ECbow().train() if approach == 'CBOW' else ESkipGram().train()
 
-    def __call__(self):
-        return self.model
+    def get_embed(self):
+        return self.ft_embed

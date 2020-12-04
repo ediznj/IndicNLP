@@ -4,18 +4,17 @@ import re
 
 class Data(object):
     def __init__(self, from_csv=None, df=None, col=None):
-        if not from_csv and not df:
+        if not (from_csv and col) and not df:
             from_csv = 'data/tamil.csv'
             col = 1
             df = pd.read_csv(from_csv).iloc[:, col]
-        elif from_csv:
+        elif from_csv and col:
             df = pd.read_csv(from_csv).iloc[:, col]
         self.text_col = df
         self.tokens = None
-        pass
 
     def get_tokens(self):
-        self.tokens = [Data.clean_text(text) for text in self.text_col]
+        self.tokens = [Data.clean_text(text).split() for text in self.text_col]
         return self.tokens
 
     @staticmethod
