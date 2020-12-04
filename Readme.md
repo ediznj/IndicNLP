@@ -1,7 +1,7 @@
-# Attempt on tamil embeddings
+# NLP for tamil (initial draft)
 
-I created this repo to experiment various nlp tasks using tamil
-language as base.
+An initiative to experiment various nlp tasks for tamil
+language.
 
 As a first step towards it, I started with text embeddings.
 
