@@ -1,4 +1,4 @@
-# NLP for tamil (initial draft)
+# NLP for Indian Language (initial draft)
 
 An initiative to experiment various nlp tasks for tamil
 language.
